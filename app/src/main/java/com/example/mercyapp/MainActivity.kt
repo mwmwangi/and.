@@ -130,7 +130,7 @@ fun RegisterScreen(){
 
 
     Text(text = buildAnnotatedString { append("If already registered, Login here ")  }, modifier = Modifier.wrapContentWidth().align(Alignment.CenterHorizontally).clickable {
-        val intent = Intent(context,LoginActivity::class.java)
+        val intent = Intent(context,AddProductActivity::class.java)
         context.startActivity(intent)
     })
 

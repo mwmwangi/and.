@@ -119,6 +119,8 @@ fun LoginScreen(){
             color = Color.Blue,
             modifier = Modifier.wrapContentWidth().align(Alignment.CenterHorizontally).clickable {
                 // Navigate to password reset screen
+                val intent = Intent(context,ForgotPassword::class.java)
+                context.startActivity(intent)
             }
         )
 
@@ -129,8 +131,8 @@ fun LoginScreen(){
     }
 
 }
-@Preview
+@Preview(showBackground = true, showSystemUi = true )
 @Composable
 fun LoginActivityPreview(){
-    LoginActivity()
+    LoginScreen()
 }
